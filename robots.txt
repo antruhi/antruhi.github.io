@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: http://marrily.in/sitemap.xml
+Sitemap: http://antruhi.com/sitemap.xml

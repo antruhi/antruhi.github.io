@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="windows-1252">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AntRuhi - The only matrimonial you will need once ever - Best matrimony for urban and progressive Indians</title>
+
+  <meta content="AntRuhi - The only matrimonial you will need once ever - Best matrimony for urban and progressive Indians" name="description">
+
+  <meta content="AntRuhi - The only matrimonial you will need once ever - Best matrimony for urban and progressive Indians" name="keywords">
+
+  <meta name="google-signin-client_id" content="289524392413-qq3a3imtbrcm0qhguu03c983ato4ciaj.apps.googleusercontent.com">
+
+  <meta http-equiv="refresh" content="5; URL=https://www.antruhi.com/" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- Favicons -->
+  <link href="assets/img/antruhi-logo.png" rel="icon">
+  <link href="assets/img/antruhi-logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!--<link href="assets/vendor/aos/aos.css" rel="stylesheet">-->
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/front-modal.css" rel="stylesheet">
+
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!--<div id="frontModal">-->
+    <!--    <div id="modalEl" class="modal">-->
+    <!--        <div class="modal-content centered">-->
+    <!--            <h1 class="modal_h1"></h1>-->
+    <!--            <p class="modal_p"></p>-->
+    <!--            <img class="modal_img image-blurred-edge" src="/assets/img/marriage-on-your-mind.png">-->
+    <!--            <button id="modal-ok-button-object" class="modal-ok-button modal_button">Awesome..! Let's start &RightArrow;</button>-->
+    <!--        </div> -->
+    <!--    </div>-->
+    <!--</div>-->
+
+    <script>
+
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut();
+            const signoutElement = document.getElementById('signout');
+            signoutElement.innerHTML ='';
+            signInPostInstruction.innerText = "After signing in, you will be redirected to AntRuhi's Shortcake Listener Bot where you will build your AntRuhi profile."
+        }
+
+        function onSignedIn(googleUser) {
+            chatPopup();
+            const signoutElement = document.getElementById('signout');
+            signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';
+            signInPostInstruction.innerText = '';
+
+            const url="localhost:3002/login";
+            const data={
+                name:googleUser.getBasicProfile().getName(),
+                email:googleUser.getBasicProfile().getEmail()
+            };
+        }
+
+    </script>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="assets/img/antruhi-logo.png" alt="">
+        <span>Ant'Ruhi</span>
+      </a>
+
+      <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js">
+      </script>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" onclick="lockScroll()" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" onclick="unlockScroll()" href="#structure">Structure</a></li>
+          <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#howitworks">How it works</a></li>
+          <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#featuresandfunctions">Features</a></li>
+          <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#faq">FAQ</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#recent-blog-posts">Blogs</a></li> -->
+          <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <!-- <h1 data-aos="fade-up">Compatible Matrimony for urban and progressive <span id="geotarget">Indian</span> singles</h1> -->
+          <h1 data-aos="fade-up">Compatible Matrimony for urban and progressive Indian singles</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Break the archaic realm and privately find your lovely life-partner with <b>Shortcake</b>: India's first and best compatibility matching and search algorithm by AntRuhi.</h2>
+          <div class="text-center text-lg-start">
+              <div class="btn-get-started-google scrollto d-inline-flex align-items-center justify-content-center align-self-center" onclick="unlockScroll()">
+                  <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark" data-longtitle="true" style="width:240px; height:50px"></div>
+              </div>
+              <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On signup, you will be taken to Shortcake Listener Bot to build your AntRuhi profile.</h6>
+              <p><a href="#" onclick="signOut();" id="signout"></a></p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+            <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>Verified & trusted profiles</h6>
+            <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>Alike sane matches</h6>
+            <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>It's free</h6>
+            <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0H24V24H0z"/><path d="M12 1l8.217 1.826c.457.102.783.507.783.976v9.987c0 2.006-1.003 3.88-2.672 4.992L12 23l-6.328-4.219C4.002 17.668 3 15.795 3 13.79V3.802c0-.469.326-.874.783-.976L12 1zm0 2.049L5 4.604v9.185c0 1.337.668 2.586 1.781 3.328L12 20.597l5.219-3.48C18.332 16.375 19 15.127 19 13.79V4.604L12 3.05zm4.452 5.173l1.415 1.414L11.503 16 7.26 11.757l1.414-1.414 2.828 2.828 4.95-4.95z" fill="rgba(47,204,113,1)"/></svg>Security and Privacy</h6>
+            </div>
+          <br>
+          <!--<h6 id="scrollUnlockCaption" data-aos="fade-up" data-aos-delay="400" onclick="unlockScroll()" style="user-select: none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11.95 7.95l-1.414 1.414L8 6.828 8 20H6V6.828L3.465 9.364 2.05 7.95 7 3l4.95 4.95zm10 8.1L17 21l-4.95-4.95 1.414-1.414 2.537 2.536L16 4h2v13.172l2.536-2.536 1.414 1.414z" fill="rgba(50,74,219,1)"/></svg>Unlock page scroll by clicking here</h6>-->
+          <div data-aos="fade-up" data-aos-delay="600">
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/main-img.png" class="img-fluid" alt="">
+          <!--<img style="height:384px;" src="assets/img/main-img-gif.gif" class="img-fluid GFG" alt="">-->
+
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="structure" class="about">
+
+      <header class="section-header">
+        <p>AntRuhi's structure</p>
+      </header>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>[A] Website</h2>
+              <p>
+                It is the beautiful part that you see and where you learn about AntRuhi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>[B] Shortcake</h2>
+                <b>Shortcake Algorithm</b> is the beautiful part that you do not see. It is the machine learning algorithm which finds best prospects for you.<br><br>
+                <b>Shortcake Listener</b> is a conversational interface on which you build your AntRuhi profile for finding most lovely and compatible prospects and indicate your interest in those prospects to start talking to them.<br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div id="howitworks" class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>How AntRuhi works</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <h2>1</h2>
+              <h3>Shortcake Listener understands your compatibility traits</h3>
+              <p>Sign up on home page with Google login. Shortcake Listener will pop up and will take you through step by step questions to understand your compatibility traits and will build your profile.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/values-2.png" class="img-fluid" alt="">
+              <h2>2</h2>
+              <h3>Verification</h3>
+              <p>Your profile is verified on the backend through an intelligent big-data network. If details are found incorrect, you will not be allowed to proceed further and you will be notified on mail.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/values-3.png" class="img-fluid" alt="">
+              <h2>3</h2>
+              <h3>Matchmaking on the backend</h3>
+              <p>Shortcake intelligent engine will find an awesome prospect for you where personalities of both of you match.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/values-4.jpg" class="img-fluid" alt="">
+              <h2>4</h2>
+              <h3>Time to show your smile</h3>
+              <p>You and your prospect will be asked to mail your recent photos on hello@antruhi.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/values-5.png" class="img-fluid" alt="">
+              <h2>5</h2>
+              <h3>A mail of excitement</h3>
+              <p>You and your prospect will be notified on mail about this match along with each other's profile and compatibility except your email addresses and consent to connect you two will be asked separately.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/values-6.jpg" class="img-fluid" alt="">
+              <h2>6</h2>
+              <h3>Live the story</h3>
+              <p>Only if both of you indicate interest in each other and provide consent to connect, email addresses details of both of you will be shared to each other. And then you guys take it forward to make it an unforgetable connection. &#128522;</p>
+              <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>          -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Values Section -->
+
+    <section class="features">
+      <div id="featuresandfunctions" class="container" data-aos="fade-up">
+        <header class="section-header">
+          <p>AntRuhi's disruptive features</p>
+        </header>
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <div class="row">
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/features.jpg" class="img-fluid p-4" alt="">
+            </div>
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-git-repository-private-line"></i>
+                  <div>
+                    <h4>Privacy and safety</h4>
+                    <p>Search, connect and commit in privacy, no family involvement. Your data is secured with highest standards.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-star-smile-line"></i>
+                  <div>
+                    <h4>Perfect matches</h4>
+                    <p>Get a <b>dating driven matrimonial experience</b>. Shortcake compatibility matching engine recommends you highly compatible profiles.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-hand-heart-line"></i>
+                  <div>
+                    <h4>Verified handpicked Profiles</h4>
+                    <p>100% verified handpicked profiles with our big-data intelligence.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-flight-takeoff-fill"></i>
+                  <div>
+                    <h4>One-click Sign in</h4>
+                    <!--<div style="margin-top:4px" class="g-signin2" data-onsuccess="onSignIn"></div>-->
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-open-source-line"></i>
+                  <div>
+                    <h4>Its free</h4>
+                    <p>You don't have to pay anything.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-mail-send-fill"></i>
+                  <div>
+                    <h4>Only email needed</h4>
+                    <p>The only contact we need from you is your email.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-logout-circle-r-line"></i>
+                  <div>
+                    <h4>Convenient offboarding</h4>
+                    <p>Just drop us a mail and we will remove your profile from backend.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-file-chart-line"></i>
+                  <div>
+                    <h4>Weekly summaries</h4>
+                    <p>You will receive summary of your prospects every weekend.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-history-line"></i>
+                  <div>
+                    <h4>Intent reversal</h4>
+                    <p>We maintian a day's padding before informing two about the match. You can reverse if you decided not to connect with prospect anymore during the day.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-play-line"></i>
+                  <div>
+                    <h4></h4>
+                    <h4><a>Let's get started</a></h4>
+                    <!--<h4><a>Let's get started <div style="margin-top:4px" class="g-signin2" data-onsuccess="onSignIn"></div></a></h4>-->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div><!-- End Feature Icons -->
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Frequently Asked Questions (FAQ)</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Do I need registration on website?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    No. Your profile will be created after you provide your email ID to Shortcake Listener. This will be required once in lifetime and your profile will be stored in AntRuhi's server.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    How can I edit or delete my AntRuhi profile?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    You can send a request on hello@antruhi.com to delete your profile or if any updates are required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    How can I trust AntRuhi?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    If you are new to AntRuhi and have not heard of it before, naturally we need to prove our environment of trust. There are few ways - (1) Go through <a href="#services"><u>media coverage</u></a>, (2) See the <a href="#testimonials"><u>real testimonials of users</u></a>, (3) Go through LinkedIn and Instagram profiles of your prospects - URL to these profiles will be provided to you as they are matched to you, (4) We will not collect your phone number as we have built a business model that does not need a phone number, (5) We are resurrecting and we want to grow large along with your success in match finding, so we need your trust now and forever, hence all your data remains safe with us. Well you can hire a hacker and if the hacker is able to get your details, the entire hacker's fee and penalty for your data breach is on us! We assure this won't happen &#128522;
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    What is AntRuhi's core?
+                  </button>
+                </h2>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    AntRuhi is a matrimony website that is building a better way for you to find your desired partner. At the core, AntRuhi's <b>Shortcake algorithm</b> works hard on recommending the most compatible ones to you. Each user is verified for your safety and only users who are serious for marriage gets to sign up and stay. If this is your thing too, then you are at the correct place. AntRuhi's emphasis is on love, compatbility and privacy. No matter whether you are open to get married in your own community or outside your community.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    Why is AntRuhi not app based?
+                  </button>
+                </h2>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    We want to keep it cost effective for users. Currently we are not charging anything from users. Maintining an app is costly and we do not want unit economics to come in way of our services.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    Does AntRuhi have a plan to launch as apps?
+                  </button>
+                </h2>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    This is not a part of our immediate strategy as our focus is on making Shortcake algorithm best in searching partner and matching compatibility while keeping the service cost effective. If you have a profile on AntRuhi, which you can build with Shortcake Listener, you will be notified if AntRuhi gets available on app.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                    Do I have to pay for using this service?
+                  </button>
+                </h2>
+                <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    No. Nothing is paid. The service is free. You don't need to provide your payment details.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
+                    How do I identify and report third-party fraud?
+                  </button>
+                </h2>
+                <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    AntRuhi will never call you. AntRuhi will only send communications through hello@antruhi.com email address. AntRuhi will never ask you your payment details. If you ever receive a call, an email from some other email address, then you are requetsted not to respond. Write down a mail to hello@antruhi.com explaining the fraud case and we will do our best to protect you from this.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+                    Is hello@antruhi.com actively monitored?
+                  </button>
+                </h2>
+                <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Yes. we are actively committed to respond to your communications.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    What was the motivation to launch AntRuhi?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Founders had observed a gap in society after listening to rather unfunny incidences of matrimonial search by their friends through existing websites and apps, relatives and people whom they were dating. AntRuhi was launched with an entrepreneurial initiative to fill this gap and making the experience of finding your better half like a breathe of fresh air.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-5">
+                    Why is AntRuhi free?
+                  </button>
+                </h2>
+                <div id="faq2-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    At AntRuhi, we believe that if you marry for love and your betterhalf is compatible, life is happy for you. Now think of it on a larger social scale. More compatible weddings can remove many social problems of India like relation with inlaws, relation with child, corruption, and improve productivity of a married person. So we intend to keep every segment of society empowered to use this service without thinking of payment.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-6">
+                    Being free, how does AntRuhi run its expenses?
+                  </button>
+                </h2>
+                <div id="faq2-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    We use our personal savings for maintaining trust and safety of users, security of profiles, run this website, maintian the team and keep improvising Shortcake algorithm so that it remains best in finding your better half.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-7">
+                    What technologies are used by AntRuhi?
+                  </button>
+                </h2>
+                <div id="faq2-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Shortcake works on machine learning which is designed with computer sience professor at IIT Kanpur. Profile verification is done using big-data intelligence.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-8">
+                    Can I use AntRuhi for dating-only?
+                  </button>
+                </h2>
+                <div id="faq2-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Well, AntRuhi gives you superpowers, and you are expected to use the superpowers to find your better-half to settle with. Don't use it as a dating-only platform, go beyond that. You have lot of dating apps like Tinder, Bumble, Truly-Madly, OkCupid, Happn etc. Use those apps if you want just a date. Use AntRuhi for good things beyond dating: connect > date > commit > marry.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-9">
+                    Do my preferences over-ride compatibility?
+                  </button>
+                </h2>
+                <div id="faq2-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Shortcake generates compatibility score for a man and woman. This score is natural. However, you can set your preferences about specifics and your compatibility score will be calculated only for users filtered by your preferences.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-10">
+                    Can I choose same sex partner?
+                  </button>
+                </h2>
+                <div id="faq2-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Section 377 of Indian Penal Code maintains same sex marriages to be illegal. Unfortunately, therefore AntRuhi does not have this facility.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-11">
+                    Can I request AntRuhi team to share contacts of marriage prospects?
+                  </button>
+                </h2>
+                <div id="faq2-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    No. AntRuhi does not entertain any such requests. AntRuhi does not work like a marriage bureau or marriage society. AntRuhi is an new-age automated service that finds prospects compatible for you as your better-half and works in a systematic way. Know more about its working <a href="#howitworks">here</a>. Please note that requests to share contact details of wedding prospects will be ignored and you will receive no response to such requests.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-12">
+                    How do I start and proceed on antruhi?
+                  </button>
+                </h2>
+                <div id="faq2-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Very simple. You start with Shortcake Listener. You build your compatibility profile using it. Go through <a href="#howitworks">how it works section</a> to understand what happens step by step.
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <!-- <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Blog</h2>
+          <p>Recent posts form our Blog</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Tue, September 15</span>
+              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Fri, August 28</span>
+              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+              <span class="post-date">Mon, July 11</span>
+              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Based in Mumbai and Hyderabad - Work for India</p>
+                  <p>(If you are in these cities, Drop a mail and we will meet over a coffee)</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>hello@antruhi.com</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="#" onclick="lockScroll()" class="logo d-flex align-items-center">
+              <img src="assets/img/antruhi-logo.png" alt="">
+              <span>AntRuhi</span>
+            </a>
+            <p>AntRuhi is a matrimony website that is building a better way for you to find your desired partner. At the core, AntRuhi's <b>Shortcake algorithm</b> works hard on recommending the most compatible ones to you. Each user is verified for your safety and only users who are serious for marriage gets to sign up and stay. If this is your thing too, then you are at the correct place.</p>
+            <br>
+            <p>AntRuhi's emphasis is on genuinity, love, compatbility and privacy. No matter whether you are open to get married in your own community or outside your community.</p>
+
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-india">Love marriage in India</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-delhi">Love marriage in Delhi</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-mumbai">Love marriage in Mumbai</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-chennai">Love marriage in Chennai</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-kolkata">Love marriage in Kolkata</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-hyderabad">Love marriage in Hyderabad</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-bengaluru">Love marriage in Bengaluru</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-pune">Love marriage in Pune</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-ahmedabad">Love marriage in Ahmedabad</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-gurugram">Love marriage in Gurugram</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-kanpur">Love marriage in Kanpur</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/love-marriage-in-vizag">Love marriage in Vizag</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/hindu-matrimony">Hindu matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/muslim-matrimony">Muslim matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/christian-matrimony">Christian matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/sikh-matrimony">Sikh matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/jain-matrimony">Jain matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/parsi-matrimony">Parsi matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/buddhist-matrimony">Buddhist matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/donyi-polo-matrimony">Donyi-polo matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/intercast-matrimony">Intercast matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/inter-religion-matrimony">Inter-religion matrimony</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/kashmiri-matrimony">Kashmiri matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/punjabi-matrimony">Punjabi matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/marwari-matrimony">Marwari matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/gujarati-matrimony">Gujarati matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/marathi-matrimony">Marathi matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/kannada-matrimony">Kannada matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/konkani-matrimony">Konkani matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/malayalam-matrimony">Malayalam matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/tamil-matrimony">Tamil matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/telugu-matrimony">Telugu matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/odia-matrimony">Odia matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/bengali-matrimony">Bengali matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/hindi-matrimony">Hindi matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/assamese-matrimony">Assamese matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/naga-matrimony">Naga matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/mizo-matrimony">Mizo matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/manipuri-matrimony">Manipuri matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/intercity-matrimony">Intercity matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/interstate-matrimony">Interstate matrimony</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/vegan-matrimony">Vegan matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/vegetarian-matrimony">Vegetarian matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/eggetarian-matrimony">Eggetarian matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/veg-nonveg-mix-matrimony">Veg - nonveg mix matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/alcoholic-matrimony">Alcoholic matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/non-alcoholic-matrimony">Non - Alcoholic matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/smoker-matrimony">Smoker matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/non-smoker-matrimony">Non - Smoker matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/alcoholic-non-alcoholic-mix-matrimony">Alcoholic - non alcoholic mix matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/smoker-non-smoker-mix-matrimony">Smoker - non smoker mix matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/social-drinker-matrimony">Social drinker matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/social-smoker-matrimony">Social smoker matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/teetotaller-matrimony">Teetotaller matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/working-couple-matrimony">Working couple matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/working-couple-housemaker-mix-matrimony">Working couple - housemaker mix matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/joint-family-matrimony">Joint family matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/nuclear-family-matrimony">Nuclear family matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/totally-individual-matrimony">Totally individual matrimony</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/betterhalf-online">Find better half online</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/betterhalf-intelligently">Find better half intelligently</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://antruhi.com/compatible-betterhalf">Find compatible better half</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <span><strong>AntRuhi (India) (2022) </span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" onclick="lockScroll()" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- external ones-->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
+  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/scroll_control.js"></script>
+  <script src="assets/js/sign_in.js"></script>
+  <script src="assets/js/geo.js"></script>
+  <script src="assets/js/front-modal.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script type="text/javascript">
+        window.addEventListener('beforeunload', function (e) {
+            signOut();
+//             e.returnValue = '';
+        });
+  </script>
+
+</body>
+
+</html>

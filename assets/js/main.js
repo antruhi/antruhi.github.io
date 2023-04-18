@@ -11,7 +11,9 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    try{
+      el = el.trim()
+    }catch{}
     if (all) {
       return [...document.querySelectorAll(el)]
     } else {

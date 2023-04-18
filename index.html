@@ -87,19 +87,19 @@
             signInPostInstruction.innerText = "After signing in, you will be redirected to AntRuhi's Shortcake Listener Bot where you will build your AntRuhi profile."
         }
 
-        function onSignedIn(googleUser) {
-            console.log("## signed in - 01")
-            initLandbot();
-            const signoutElement = document.getElementById('signout');
-            signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';
-            signInPostInstruction.innerText = '';
+        // function onSignedIn(googleUser) {
+        //     console.log("## signed in - 01")
+        //     initLandbot();
+        //     const signoutElement = document.getElementById('signout');
+        //     signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';
+        //     signInPostInstruction.innerText = '';
 
-            const url="localhost:3002/login";
-            const data={
-                name:googleUser.getBasicProfile().getName(),
-                email:googleUser.getBasicProfile().getEmail()
-            };
-        }
+        //     const url="localhost:3002/login";
+        //     const data={
+        //         name:googleUser.getBasicProfile().getName(),
+        //         email:googleUser.getBasicProfile().getEmail()
+        //     };
+        // }
 
     </script>
 
@@ -143,13 +143,8 @@
           <div class="text-center text-lg-start">
               <div class="btn-get-started-google scrollto d-inline-flex align-items-center justify-content-center align-self-center" onclick="unlockScroll()">
                   <!-- <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark" data-longtitle="true" style="width:240px; height:50px"></div> -->
-                  <div id="g_id_onload"
-                      data-client_id="YOUR_GOOGLE_CLIENT_ID"
-                      data-login_uri="https://your.domain/your_login_endpoint"
-                      data-your_own_param_1_to_login="any_value"
-                      data-your_own_param_2_to_login="any_value">
-                  </div>
-                </div>
+                  <button class="button-36" role="button" onclick="initLandbot">Start here</button>
+              </div>
               <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On signup, you will be taken to Shortcake Listener Bot to build your AntRuhi profile.</h6>
               <p><a href="#" onclick="signOut();" id="signout"></a></p>
             </div>

@@ -11,12 +11,11 @@
 
   <meta content="AntRuhi - The only matrimonial you will need once ever - Best matrimony for urban and progressive Indians" name="keywords">
 
-  <meta name="google-signin-client_id" content="289524392413-qq3a3imtbrcm0qhguu03c983ato4ciaj.apps.googleusercontent.com">
-
-  <meta http-equiv="refresh" content="10; URL=https://www.antruhi.com/" />
+  <meta name="google-signin-client_id" content="448803355723-nv3rglhdo5sosa3jkm80u8i9a15671ua.apps.googleusercontent.com">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <meta http-equiv="refresh" content="10; URL=https://www.antruhi.com/" />
 
   <!-- Favicons -->
   <link href="assets/img/antruhi-logo.png" rel="icon">
@@ -58,6 +57,27 @@
     <!--    </div>-->
     <!--</div>-->
 
+    <script SameSite="None; Secure" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+
+    <!-- <script>
+      window.addEventListener('mouseover', initLandbot, { once: true });
+      window.addEventListener('touchstart', initLandbot, { once: true });
+      var myLandbot;
+      function initLandbot() {
+        if (!myLandbot) {
+          var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+          s.addEventListener('load', function() {
+            myLandbot = new Landbot.Popup({
+              configUrl: 'https://storage.googleapis.com/chats.landbot.io/v3/H-991902-B8YMZ7OY1RAF9PMQ/index.json',
+            });
+          });
+          s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+    </script> -->
+  
     <script>
 
         function signOut() {
@@ -69,7 +89,8 @@
         }
 
         function onSignedIn(googleUser) {
-            chatPopup();
+            console.log("## signed in - 01")
+            initLandbot();
             const signoutElement = document.getElementById('signout');
             signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';
             signInPostInstruction.innerText = '';
@@ -674,8 +695,8 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>Based in Mumbai and Hyderabad - Work for India</p>
-                  <p>(If you are in these cities, Drop a mail and we will meet over a coffee)</p>
+                  <p>Based in Mumbai - Work for India</p>
+                  <p>(If you are here, Drop a mail and we will meet over a coffee)</p>
                 </div>
               </div>
 
@@ -711,6 +732,8 @@
             <p>AntRuhi is a matrimony website that is building a better way for you to find your desired partner. At the core, AntRuhi's <b>Shortcake algorithm</b> works hard on recommending the most compatible ones to you. Each user is verified for your safety and only users who are serious for marriage gets to sign up and stay. If this is your thing too, then you are at the correct place.</p>
             <br>
             <p>AntRuhi's emphasis is on genuinity, love, compatbility and privacy. No matter whether you are open to get married in your own community or outside your community.</p>
+            <br>
+            <p><i class="bi bi-file-earmark-lock"></i>Please access our <a href="/privacypolicy.html">Privacy Policy</a></p>
 
           </div>
 
@@ -803,7 +826,7 @@
 
     <div class="container">
       <div class="copyright">
-        <span><strong>AntRuhi (India) (2022) </span></strong>
+        <span><strong>AntRuhi (India) (2023) </span></strong>
       </div>
     </div>
   </footer><!-- End Footer -->

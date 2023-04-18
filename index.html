@@ -67,7 +67,7 @@
         }
 
         function onSignedIn(googleUser) {
-            console.log("## signed in")
+            console.log("## signed in - 01")
             chatPopup();
             const signoutElement = document.getElementById('signout');
             signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';

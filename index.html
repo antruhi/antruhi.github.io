@@ -79,6 +79,10 @@
   
     <script>
 
+        function chatPopup1(){
+          alert("hi");
+        }
+
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut();
@@ -143,7 +147,7 @@
           <div class="text-center text-lg-start">
               <div class="btn-get-started-google scrollto d-inline-flex align-items-center justify-content-center align-self-center" onclick="unlockScroll()">
                   <!-- <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark" data-longtitle="true" style="width:240px; height:50px"></div> -->
-                  <button class="button-36" role="button" onclick="chatPopup">Start here</button>
+                  <button class="button-36" role="button" onclick="chatPopup()">Start here</button>
               </div>
               <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On signup, you will be taken to Shortcake Listener Bot to build your AntRuhi profile.</h6>
               <p><a href="#" onclick="signOut();" id="signout"></a></p>

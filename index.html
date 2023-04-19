@@ -57,25 +57,6 @@
     <!--</div>-->
 
     <script SameSite="None; Secure" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-
-    <!-- <script>
-      window.addEventListener('mouseover', initLandbot, { once: true });
-      window.addEventListener('touchstart', initLandbot, { once: true });
-      var myLandbot;
-      function initLandbot() {
-        if (!myLandbot) {
-          var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-          s.addEventListener('load', function() {
-            myLandbot = new Landbot.Popup({
-              configUrl: 'https://storage.googleapis.com/chats.landbot.io/v3/H-991902-B8YMZ7OY1RAF9PMQ/index.json',
-            });
-          });
-          s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-      }
-    </script> -->
   
     <script>
 
@@ -90,21 +71,6 @@
             signoutElement.innerHTML ='';
             signInPostInstruction.innerText = "After signing in, you will be redirected to AntRuhi's Shortcake Listener Bot where you will build your AntRuhi profile."
         }
-
-        // function onSignedIn(googleUser) {
-        //     console.log("## signed in - 01")
-        //     initLandbot();
-        //     const signoutElement = document.getElementById('signout');
-        //     signoutElement.innerHTML = googleUser.getBasicProfile().getName() + ' | Sign out';
-        //     signInPostInstruction.innerText = '';
-
-        //     const url="localhost:3002/login";
-        //     const data={
-        //         name:googleUser.getBasicProfile().getName(),
-        //         email:googleUser.getBasicProfile().getEmail()
-        //     };
-        // }
-
     </script>
 
   <!-- ======= Header ======= -->
@@ -142,14 +108,14 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <!-- <h1 data-aos="fade-up">Compatible Matrimony for urban and progressive <span id="geotarget">Indian</span> singles</h1> -->
-          <h1 data-aos="fade-up">Compatible Matrimony for urban and progressive Indian singles</h1>
+          <h1 id="very-top" data-aos="fade-up">Compatible Matrimony for urban and progressive Indian singles</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Break the archaic realm and privately find your lovely life-partner with <b>Shortcake</b>: India's first and best compatibility matching and search algorithm by AntRuhi.</h2>
           <div class="text-center text-lg-start">
               <div class="btn-get-started-google scrollto d-inline-flex align-items-center justify-content-center align-self-center" onclick="unlockScroll()">
                   <!-- <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark" data-longtitle="true" style="width:240px; height:50px"></div> -->
-                  <button class="button-36" role="button" onclick="chatPopup()">Start here</button>
+                  <button id="button-36" class="button-36" role="button" onclick="chatPopup()">Start here</button>
               </div>
-              <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On signup, you will be taken to Shortcake Listener Bot to build your AntRuhi profile.</h6>
+              <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On clicking, you will be taken to Shortcake Listener Bot to build your AntRuhi profile. <a href="#howitworks">Learn more.</a></h6>
               <p><a href="#" onclick="signOut();" id="signout"></a></p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
@@ -222,7 +188,7 @@
               <img src="assets/img/values-1.png" class="img-fluid" alt="">
               <h2>1</h2>
               <h3>Shortcake Listener understands your compatibility traits</h3>
-              <p>Sign up on home page with Google login. Shortcake Listener will pop up and will take you through step by step questions to understand your compatibility traits and will build your profile.</p>
+              <p>Click on <a href='#very-top'>Start Here</a> button. Shortcake Listener will pop up and will take you through step by step questions to understand your compatibility traits and will build your profile.</p>
             </div>
           </div>
 
@@ -268,7 +234,7 @@
               <h2>6</h2>
               <h3>Live the story</h3>
               <p>Only if both of you indicate interest in each other and provide consent to connect, email addresses details of both of you will be shared to each other. And then you guys take it forward to make it an unforgetable connection. &#128522;</p>
-              <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>          -->
+              <button id="button-36" class="button-36" role="button" onclick="chatPopup()">Start here</button>
             </div>
           </div>
         </div>

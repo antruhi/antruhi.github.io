@@ -41,6 +41,16 @@
     amplitude.init('c1da102e198292d5d46098c41c064f7f', undefined, { defaultTracking: { sessions: true, pageViews: true, formInteractions: true, fileDownloads: true }});
   </script>
 
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "944937d3-3633-4350-b131-acd05478fca2",
+      });
+    });
+  </script>
+
   <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR2Z2DS7VF"></script>
     <script>
@@ -172,6 +182,8 @@
             <a href="https://www.instagram.com/antruhiofficial/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"> Follow on Instagram</i></a>
             <br>
             <a href="https://medium.com/@antruhi.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-bookmark-heart"> Don't miss out on blogs</i></a>
+            <br>
+            <div class='onesignal-customlink-container'></div>
             
           </div>
           <br>
@@ -868,6 +880,7 @@
   <script src="assets/js/sign_in.js"></script>
   <script src="assets/js/geo.js"></script>
   <script src="assets/js/front-modal.js"></script>
+  <script src="OneSignalSDKWorker.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <script type="text/javascript">

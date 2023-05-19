@@ -34,6 +34,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/front-modal.css" rel="stylesheet">
+  <link href="assets/css/horizontal-scroll.css" rel="stylesheet">
 
   <script type="text/javascript">
     !function(){"use strict";!function(e,t){var n=e.amplitude||{_q:[],_iq:{}};if(n.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var r=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,n){return function(r){e._q.push({name:t,args:Array.prototype.slice.call(n,0),resolve:r})}},o=function(e,t,n){e[t]=function(){if(n)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<y.length;t++)o(e,y[t],!1);for(var n=0;n<g.length;n++)o(e,g[n],!0)};n.invoked=!0;var a=t.createElement("script");a.type="text/javascript",a.integrity="sha384-TPZhteUkZj8CAyBx+GZZytBdkuKnhKsSKcCoVCq0QSteWf/Kw5Kb9oVFUROLE1l3",a.crossOrigin="anonymous",a.async=!0,a.src="https://cdn.amplitude.com/libs/analytics-browser-1.9.1-min.js.gz",a.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);for(var u=function(){return this._q=[],this},l=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],p=0;p<l.length;p++)r(u,l[p]);n.Identify=u;for(var d=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],v=0;v<f.length;v++)r(d,f[v]);n.Revenue=d;var y=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(n),n.createInstance=function(e){return n._iq[e]={_q:[]},i(n._iq[e]),n._iq[e]},e.amplitude=n}}(window,document)}();
@@ -143,7 +144,7 @@
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#howitworks">How it works</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#featuresandfunctions">Features</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#faq">FAQ</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#recent-blog-posts">Blogs</a></li> -->
+          <li><a class="nav-link scrollto" href="#recent-blog-posts">Storyverse</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -224,8 +225,9 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h2>[B] Shortcake</h2>
-                <b>Shortcake Algorithm</b> is the beautiful part that you do not see. It is the machine learning algorithm which finds best prospects for you.<br><br>
-                <b>Shortcake Listener</b> is a conversational interface on which you build your AntRuhi profile for finding most lovely and compatible prospects and indicate your interest in those prospects to start talking to them.<br>
+                The <b>Shortcake Algorithm</b> is like a secret ingredient that works behind the scenes. It's a special type of machine learning to find the best potential matches for you.
+                <br><br>
+                The <b>Shortcake Listener</b> is a friendly talking platform where you can create your AntRuhi profile. It helps you find the most delightful and compatible potential matches. You can also show your interest in those matches and start conversations with them. It's like having a conversation partner to guide you through the process of finding your perfect match.
             </div>
           </div>
 
@@ -664,49 +666,83 @@
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <!-- <section id="recent-blog-posts" class="recent-blog-posts">
+    <section id="recent-blog-posts" class="recent-blog-posts">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Blog</h2>
-          <p>Recent posts form our Blog</p>
+          <h2>Storyverse</h2>
+          <p>The Hottest Chronicles of Our Bloggy Tales</p>
         </header>
+        
 
-        <div class="row">
+        <div class="scroller-container">
+          <ul class="scroller-cards">
+  
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BZM1Ky3MsZZKnSo7JzzxkQ.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">When Hearts Align - The Crucial Dance of Sexual Compatibility</h3>
+                  <a href="https://medium.com/@antruhi.com/when-hearts-align-the-crucial-dance-of-sexual-compatibility-9f8793f1dbc1" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Tue, September 15</span>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*AiKWO9mR9nchwpQrHCk6pg.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">The Ten Commandments of Good Women: Behaviors to add into a Relationship</h3>
+                  <a href="https://medium.com/@antruhi.com/the-ten-commandments-of-good-women-behaviors-to-add-into-a-relationship-8ed348995d18" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Fri, August 28</span>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*5Lrs2WSDNnRU09AT" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">The Ten Commandments of Good Men: Behaviors to Avoid in a Relationship</h3>
+                  <a href="https://medium.com/@antruhi.com/the-ten-commandments-of-good-men-behaviors-to-avoid-in-a-relationship-ba3ebddd4a69" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Mon, July 11</span>
-              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rn-UAcDoDpkl6NFrKTUACA.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">The Journey to a Harmonious and Happy Marriage - Balancing Parents, Partners, and Love</h3>
+                  <a href="https://medium.com/@antruhi.com/the-journey-to-a-harmonious-and-happy-marriage-balancing-parents-partners-and-love-4d59f694fe99" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*xEj-lgAWNw-QmQD9" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">After their compatible union, Kabir led Jasmine to good health</h3>
+                  <a href="https://medium.com/@antruhi.com/after-their-compatible-union-kabir-led-jasmine-to-good-health-4c9f5dede598" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
         </div>
+        
 
       </div>
 
-    </section> -->
+    </section>
     <!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -728,7 +764,6 @@
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
                   <p>Based in Mumbai - Work for India</p>
-                  <p>(If you are here, Drop a mail and we will meet over a coffee)</p>
                 </div>
               </div>
 
@@ -737,6 +772,7 @@
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>hello@antruhi.com</p>
+                  <p>(Average response time: 2 hours)</p>
                 </div>
               </div>
             </div>

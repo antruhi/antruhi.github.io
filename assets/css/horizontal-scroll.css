@@ -1,0 +1,129 @@
+:root {
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+    --darkblue: #4154f1;
+  }
+  
+  .scroller-container {
+    max-width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  scroller-h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+  
+  .scroller-cards {
+    display: flex;
+    width: auto;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .scroller-card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 0px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .scroller-card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .scroller-card:hover {
+    color: var(--white);
+    background: var(--thumb);
+  }
+  
+  .scroller-card .scroller-card-title {
+    font-size: 20px;
+  }
+  
+  .scroller-card .scroller-card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .scroller-card .scroller-card-link-wrapper {
+    margin-top: auto;
+  }
+  
+  .scroller-card .scroller-card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--thumb);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .scroller-card:hover .scroller-card-link {
+    background: var(--darkblue);
+  }
+  
+  .scroller-cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .scroller-cards::-webkit-scrollbar-thumb,
+  .scroller-cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .scroller-cards::-webkit-scrollbar-thumb {
+    background: var(--darkblue);
+  }
+  
+  .scroller-cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+  
+  @media (min-width: 500px) {
+    .scroller-card {
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .scroller-card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .scroller-card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .scroller-card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .scroller-card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .scroller-card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  
+  
+  
+  

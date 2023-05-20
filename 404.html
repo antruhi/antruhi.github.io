@@ -13,8 +13,6 @@
 
   <meta name="google-signin-client_id" content="448803355723-nv3rglhdo5sosa3jkm80u8i9a15671ua.apps.googleusercontent.com">
 
-  <meta http-equiv="refresh" content="10; URL=https://www.antruhi.com/" />
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -36,6 +34,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/front-modal.css" rel="stylesheet">
+  <link href="assets/css/horizontal-scroll.css" rel="stylesheet">
 
   <script type="text/javascript">
     !function(){"use strict";!function(e,t){var n=e.amplitude||{_q:[],_iq:{}};if(n.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var r=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,n){return function(r){e._q.push({name:t,args:Array.prototype.slice.call(n,0),resolve:r})}},o=function(e,t,n){e[t]=function(){if(n)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<y.length;t++)o(e,y[t],!1);for(var n=0;n<g.length;n++)o(e,g[n],!0)};n.invoked=!0;var a=t.createElement("script");a.type="text/javascript",a.integrity="sha384-TPZhteUkZj8CAyBx+GZZytBdkuKnhKsSKcCoVCq0QSteWf/Kw5Kb9oVFUROLE1l3",a.crossOrigin="anonymous",a.async=!0,a.src="https://cdn.amplitude.com/libs/analytics-browser-1.9.1-min.js.gz",a.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);for(var u=function(){return this._q=[],this},l=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],p=0;p<l.length;p++)r(u,l[p]);n.Identify=u;for(var d=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],v=0;v<f.length;v++)r(d,f[v]);n.Revenue=d;var y=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(n),n.createInstance=function(e){return n._iq[e]={_q:[]},i(n._iq[e]),n._iq[e]},e.amplitude=n}}(window,document)}();
@@ -43,15 +42,15 @@
     amplitude.init('c1da102e198292d5d46098c41c064f7f', undefined, { defaultTracking: { sessions: true, pageViews: true, formInteractions: true, fileDownloads: true }});
   </script>
 
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "944937d3-3633-4350-b131-acd05478fca2",
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "944937d3-3633-4350-b131-acd05478fca2",
+      });
     });
-  });
-</script>
+  </script>
 
   <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR2Z2DS7VF"></script>
@@ -145,7 +144,7 @@
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#howitworks">How it works</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#featuresandfunctions">Features</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#faq">FAQ</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#recent-blog-posts">Blogs</a></li> -->
+          <li><a class="nav-link scrollto" href="#recent-blog-posts">Storyverse</a></li>
           <li><a class="nav-link scrollto" onclick="unlockScroll()" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -181,17 +180,7 @@
           <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>Verified & trusted profiles</h6>
           <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>Compatible matches</h6>
           <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0H24V24H0z"/><path d="M12 1l8.217 1.826c.457.102.783.507.783.976v9.987c0 2.006-1.003 3.88-2.672 4.992L12 23l-6.328-4.219C4.002 17.668 3 15.795 3 13.79V3.802c0-.469.326-.874.783-.976L12 1zm0 2.049L5 4.604v9.185c0 1.337.668 2.586 1.781 3.328L12 20.597l5.219-3.48C18.332 16.375 19 15.127 19 13.79V4.604L12 3.05zm4.452 5.173l1.415 1.414L11.503 16 7.26 11.757l1.414-1.414 2.828 2.828 4.95-4.95z" fill="rgba(47,204,113,1)"/></svg>Security and Privacy</h6>
-          <h6 data-aos="fade-up" data-aos-delay="400" style="align: justify; margin-left: 0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(47,204,113,1)"/></svg>It's free</h6>
           
-          <div class="text-center text-lg-start">
-              <div class="btn-get-started-google scrollto d-inline-flex align-items-center justify-content-center align-self-center" onclick="unlockScroll()">
-                  <!-- <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark" data-longtitle="true" style="width:240px; height:50px"></div> -->
-                  <button id="button-36" class="button-36" role="button" onclick="chatPopup()">Start here</button>
-              </div>
-              <h6 id="signInPostInstruction" data-aos="fade-up" data-aos-delay="400">On clicking, you will be taken to Shortcake Listener Bot to build your AntRuhi profile. <a href="#howitworks">Learn more.</a></h6>
-              <p><a href="#" onclick="signOut();" id="signout"></a></p>
-            </div>
-            
             <br>
             <a href="https://www.instagram.com/antruhiofficial/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"> Follow on Instagram</i></a>
             <br>
@@ -236,8 +225,9 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h2>[B] Shortcake</h2>
-                <b>Shortcake Algorithm</b> is the beautiful part that you do not see. It is the machine learning algorithm which finds best prospects for you.<br><br>
-                <b>Shortcake Listener</b> is a conversational interface on which you build your AntRuhi profile for finding most lovely and compatible prospects and indicate your interest in those prospects to start talking to them.<br>
+                The <b>Shortcake Algorithm</b> is like a secret ingredient that works behind the scenes. It's a special type of machine learning to find the best potential matches for you.
+                <br><br>
+                The <b>Shortcake Listener</b> is a friendly talking platform where you can create your AntRuhi profile. It helps you find the most delightful and compatible potential matches. You can also show your interest in those matches and start conversations with them. It's like having a conversation partner to guide you through the process of finding your perfect match.
             </div>
           </div>
 
@@ -676,49 +666,206 @@
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <!-- <section id="recent-blog-posts" class="recent-blog-posts">
+    <section id="recent-blog-posts" class="recent-blog-posts">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Blog</h2>
-          <p>Recent posts form our Blog</p>
+          <h2>Storyverse</h2>
+          <p>The Hottest Chronicles of Our Bloggy Tales</p>
+          <br>
+          <h5>(Swipe for more)</h5>
         </header>
+        
 
-        <div class="row">
+        <div class="scroller-container">
+          <ul class="scroller-cards">
+  
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BZM1Ky3MsZZKnSo7JzzxkQ.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">When Hearts Align - The Crucial Dance of Sexual Compatibility</h3>
+                  <a href="https://medium.com/@antruhi.com/when-hearts-align-the-crucial-dance-of-sexual-compatibility-9f8793f1dbc1" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Tue, September 15</span>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*cOlP9VcTOymrHiEo" class="img-fluid" alt=""></div>
+                  <span class="post-date">April 18, 2023</span>
+                  <h3 class="post-title">Need of compatible marriages in India</h3>
+                  <a href="https://medium.com/@antruhi.com/need-of-compatible-marriages-in-india-fb14213e1079" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Fri, August 28</span>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*n0UWjPHZ45hV1FPW2QG7yA.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 9, 2023</span>
+                  <h3 class="post-title">The Safety and Success of Finding Your Life Partner Online in India</h3>
+                  <a href="https://medium.com/@antruhi.com/the-safety-and-success-of-finding-your-life-partner-online-in-india-fff7629bc266" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">Mon, July 11</span>
-              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-              <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*Bk5PvLOA9D8TGqn7" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 1, 2023</span>
+                  <h3 class="post-title">Falling for a Fantasy: How to Move On from Someone You've Never Met</h3>
+                  <a href="https://medium.com/@antruhi.com/falling-for-a-fantasy-how-to-move-on-from-someone-youve-never-met-8c6879313c48" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
 
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*yqh7onWKvwnzeaan" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 11, 2023</span>
+                  <h3 class="post-title">Finding the Right Moment to Move in Together... and Have Fun Along the Way</h3>
+                  <a href="https://medium.com/@antruhi.com/finding-the-right-moment-to-move-in-together-and-have-fun-along-the-way-cbf307c1d375" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sddGQDBaG0p8aQBjtGGUwA.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 1, 2023</span>
+                  <h3 class="post-title">How to Navigate Online Matrimony When Your Prospect Doesn't Meet Expectations</h3>
+                  <a href="https://medium.com/@antruhi.com/how-to-navigate-online-matrimony-when-your-prospect-doesnt-meet-expectations-e74c2979bbc" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*AiKWO9mR9nchwpQrHCk6pg.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">The Ten Commandments of Good Women: Behaviors to add into a Relationship</h3>
+                  <a href="https://medium.com/@antruhi.com/the-ten-commandments-of-good-women-behaviors-to-add-into-a-relationship-8ed348995d18" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div>
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*5Lrs2WSDNnRU09AT" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 8, 2023</span>
+                  <h3 class="post-title">The Ten Commandments of Good Men: Behaviors to Avoid in a Relationship</h3>
+                  <a href="https://medium.com/@antruhi.com/nurturing-romance-through-chat-differentiating-between-good-and-bad-conversations-with-your-de1d91c244fc" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rn-UAcDoDpkl6NFrKTUACA.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">The Journey to a Harmonious and Happy Marriage - Balancing Parents, Partners, and Love</h3>
+                  <a href="https://medium.com/@antruhi.com/the-journey-to-a-harmonious-and-happy-marriage-balancing-parents-partners-and-love-4d59f694fe99" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*xEj-lgAWNw-QmQD9" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 17, 2023</span>
+                  <h3 class="post-title">After their compatible union, Kabir led Jasmine to good health</h3>
+                  <a href="https://medium.com/@antruhi.com/after-their-compatible-union-kabir-led-jasmine-to-good-health-4c9f5dede598" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*1IL0V0ZKHrIbXjtU" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 10, 2023</span>
+                  <h3 class="post-title">The Salty Surprise: A Comedy of Arranged Marriage Mishaps</h3>
+                  <a href="https://medium.com/@antruhi.com/the-salty-surprise-a-comedy-of-arranged-marriage-mishapstitle-f7cfa6d65b50" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4IHDwcTa8o6xdabup4RZPw.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 10, 2023</span>
+                  <h3 class="post-title">Love Bytes: A Hilarious Journey from Hello to Happily Ever After</h3>
+                  <a href="https://medium.com/@antruhi.com/love-bytes-a-hilarious-journey-from-hello-to-happily-ever-after-cbf48e9326a4" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*U3QoQX5FOFa4cTer" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 10, 2023</span>
+                  <h3 class="post-title">Nurturing Romance Through Chat: Differentiating Between Good and Bad Conversations</h3>
+                  <a href="https://medium.com/@antruhi.com/nurturing-romance-through-chat-differentiating-between-good-and-bad-conversations-with-your-de1d91c244fc" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*8x3lCQFhUY3MITXnB2Eg6Q.jpeg" class="img-fluid" alt=""></div>
+                  <span class="post-date">May 1, 2023</span>
+                  <h3 class="post-title">A compatible companion can make you laugh forever</h3>
+                  <a href="https://medium.com/@antruhi.com/a-compatible-companion-can-make-you-lau-b2849009dd31" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*lu8aCvidl1a5fPa4" class="img-fluid" alt=""></div>
+                  <span class="post-date">April 24, 2023</span>
+                  <h3 class="post-title">Breaking Boundaries: A Love Story Beyond Culture and Tradition</h3>
+                  <a href="https://medium.com/@antruhi.com/breaking-boundaries-a-love-story-beyond-culture-and-tradition-a961ce75a3d7" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scroller-card">
+              <div >
+                <div class="post-box">
+                  <div class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/0*S5LHjg_uT0qFdt7f" class="img-fluid" alt=""></div>
+                  <span class="post-date">April 18, 2023</span>
+                  <h3 class="post-title">The Thrill of the Chase: Finding a Compatible Relationship</h3>
+                  <a href="https://medium.com/@antruhi.com/the-thrill-of-the-chase-finding-a-compatible-relationship-d8c6fd5adf1e" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
         </div>
+        
 
       </div>
 
-    </section> -->
+    </section>
     <!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -740,7 +887,6 @@
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
                   <p>Based in Mumbai - Work for India</p>
-                  <p>(If you are here, Drop a mail and we will meet over a coffee)</p>
                 </div>
               </div>
 
@@ -749,6 +895,7 @@
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>hello@antruhi.com</p>
+                  <p>(Average response time: 2 hours)</p>
                 </div>
               </div>
             </div>
@@ -901,8 +1048,6 @@
 //             e.returnValue = '';
         });
   </script>
-
-  
 
 </body>
 
